@@ -1,0 +1,164 @@
+{
+  "About": {
+    "Name": "Parenting Object",
+    "Author": "rickomax",
+    "Copyright": "Copyright (C) 2020 rickomax",
+    "Comment": "Adds an object as another object child",
+    "URL": "http://www.example.com",
+    "Help": "Help/Example.chm",
+    "Identifier": "PORM"
+  },
+  "ActionMenu": [
+    [
+      0,
+      "Set child parent"
+    ],
+    [
+      1,
+      "Set child parent by fixed"
+    ],
+    [
+      2,
+      "Unparent child"
+    ],
+    [
+      3,
+      "Unparent child by fixed"
+    ],
+    [
+      4,
+      "Unparent all objects"
+    ],
+    [
+      5,
+      "Call custom event"
+    ],
+    [
+      6,
+      "Set frame delay by fixed"
+    ]
+  ],
+  "ConditionMenu": [
+    [
+      0,
+      "Pick child parent"
+    ],
+    [
+      1,
+      "Pick child parent by fixed"
+    ],
+    [
+      2,
+      "On custom event"
+    ]
+  ],
+  "ExpressionMenu": [
+    [
+      0,
+      "Get custom event parameter"
+    ]
+  ],
+  "Actions": [
+    {
+      "Title": "Set parent %1 for %0",
+      "Parameters": [
+        [
+          "Object",
+          "Child"
+        ],
+        [
+          "Object",
+          "parent"
+        ]
+      ]
+    },
+    {
+      "Title": "Set parent with fixed (%1) for child with fixed (%0)",
+      "Parameters": [
+        [
+          "Integer",
+          "Child"
+        ],
+        [
+          "Integer",
+          "parent"
+        ]
+      ]
+    },
+    {
+      "Title": "Unparent %0",
+      "Parameters": [
+        [
+          "Object",
+          "Child"
+        ]
+      ]
+    },
+    {
+      "Title": "Unparent child with fixed (%0)",
+      "Parameters": [
+        [
+          "Integer",
+          "Child"
+        ]
+      ]
+    },
+    {
+      "Title": "Unparent all objects"
+    },
+    {
+      "Title": "Call custom event with parameter (%0)",
+      "Parameters": [
+        [
+          "Integer",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "Title": "Set frame delay from object with fixed (%0) to (%1)",
+      "Parameters": [
+        [
+          "Integer",
+          "Fixed"
+        ],
+        [
+          "Integer",
+          "Delay"
+        ]
+      ]
+    }
+  ],
+  "Conditions": [
+    {
+      "Title": "Pick parent for child %0",
+      "Parameters": [
+        [
+          "Object",
+          "Child"
+        ]
+      ],
+      "Triggered": false
+    },
+    {
+      "Title": "Pick parent for child with fixed (%0)",
+      "Parameters": [
+        [
+          "Integer",
+          "Child"
+        ]
+      ],
+      "Triggered": false
+    },
+    {
+      "Title": "On custom event",
+      "Triggered": true
+    }
+  ],
+  "Expressions": [
+    {
+      "Title": "GetCustomEventParameter(",
+      "Returns": "Integer"
+    }
+  ]
+}
